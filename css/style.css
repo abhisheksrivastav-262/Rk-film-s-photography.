@@ -69,7 +69,7 @@ section{padding:110px 0;position:relative}
 /* Hero */
 .hero{min-height:100vh;display:flex;align-items:flex-end;padding:140px 0 90px;overflow:hidden;background:#060606;position:relative}
 .hero-bg{position:absolute;inset:0}
-.hero-bg img,.hero-bg video{width:100%;height:100%;object-fit:cover;opacity:.55;animation:kenburns 24s ease-in-out infinite alternate;filter:saturate(1.05) contrast(1.05) brightness(.9)}
+.hero-bg img,.hero-bg video{width:100%;height:100%;object-fit:cover;object-position:center 30%;opacity:.55;animation:kenburns 24s ease-in-out infinite alternate;filter:saturate(1.05) contrast(1.05) brightness(.9)}
 @keyframes kenburns{from{transform:scale(1)}to{transform:scale(1.15)}}
 .hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,#0B0B0B 4%,rgba(11,11,11,.55) 45%,rgba(11,11,11,.35) 100%),radial-gradient(ellipse at center,transparent 30%,rgba(0,0,0,.5));}
 .hero-content{position:relative;z-index:2;width:min(1200px,92%);margin:0 auto}
@@ -89,7 +89,7 @@ section{padding:110px 0;position:relative}
 .g-3{grid-template-columns:repeat(3,1fr)}.g-4{grid-template-columns:repeat(4,1fr)}.g-2{grid-template-columns:repeat(2,1fr)}
 .cat-grid{grid-template-columns:repeat(4,1fr)}
 .cat-card{position:relative;border-radius:var(--radius);overflow:hidden;height:460px;border:1px solid transparent;transition:.5s var(--ease);display:block}
-.cat-card img{width:100%;height:100%;object-fit:cover;transition:transform 1.1s var(--ease);filter:saturate(1.05) brightness(.92)}
+.cat-card img{width:100%;height:100%;object-fit:cover;object-position:center top;transition:transform 1.1s var(--ease);filter:saturate(1.05) brightness(.92)}
 .cat-card:hover{border-color:var(--gold);transform:translateY(-8px);box-shadow:var(--shadow)}
 .cat-card:hover img{transform:scale(1.12)}
 .cat-card .overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.88) 0%,rgba(0,0,0,.15) 55%,transparent);display:flex;flex-direction:column;justify-content:flex-end;padding:30px}
@@ -189,7 +189,7 @@ section{padding:110px 0;position:relative}
 .slide .stars{color:var(--gold);letter-spacing:.3em;margin-bottom:18px}
 .slide blockquote{font-family:'Playfair Display',serif;font-size:clamp(1.1rem,2.4vw,1.5rem);font-style:italic;line-height:1.6;margin-bottom:24px}
 .slide .who{display:flex;align-items:center;justify-content:center;gap:14px}
-.slide .who img{width:56px;height:56px;border-radius:50%;object-fit:cover;border:2px solid var(--gold)}
+.slide .who img{width:56px;height:56px;border-radius:50%;object-fit:cover;object-position:center 25%;border:2px solid var(--gold)}
 .slide .who b{display:block;font-size:.95rem}.slide .who small{color:var(--gold);letter-spacing:.18em;text-transform:uppercase;font-size:.7rem}
 .slider-nav{display:flex;justify-content:center;gap:12px;margin-top:26px}
 .slider-nav button{width:52px;height:52px;border-radius:50%;border:1px solid var(--gold);background:transparent;color:var(--gold);cursor:pointer;font-size:1.2rem;transition:.3s}
@@ -217,6 +217,7 @@ footer{border-top:1px solid var(--line);background:#080808;padding:70px 0 28px;m
 .foot-grid h4{font-size:.78rem;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);margin-bottom:18px;font-family:'Inter',sans-serif}
 .foot-grid a,.foot-grid p{display:block;color:var(--muted);font-size:.92rem;margin-bottom:10px;transition:.3s}
 .foot-grid a:hover{color:var(--gold)}
+.foot-grid a.btn{color:#0B0B0B;display:inline-flex;margin-bottom:0}
 .foot-brand img{width:64px;height:64px;border-radius:50%;border:1px solid var(--gold);margin-bottom:16px}
 .foot-bottom{border-top:1px solid rgba(255,255,255,.07);padding-top:24px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;color:#6f6a61;font-size:.82rem}
 
@@ -287,7 +288,7 @@ a,button{-webkit-tap-highlight-color:rgba(200,164,106,.25);touch-action:manipula
   .hero p{font-size:1rem}
   .hero-btns .btn{width:100%}
   .hero-meta{gap:14px;font-size:.68rem}
-  .cat-card{height:340px}
+  .cat-card{height:430px}
   .cat-card .overlay{padding:22px}
   .sec-title{font-size:clamp(1.7rem,8vw,2.2rem)}
   .eyebrow{letter-spacing:.25em}
