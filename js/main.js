@@ -54,10 +54,6 @@
     nxtBtn.href=nxtPage; nxtBtn.className='drawer-next';
     nxtBtn.textContent='Next → '+pageNames[nxtPage];
     nxtBtn.addEventListener('click',()=>setMenu(false));
-    const scroller=document.createElement('div');
-    scroller.className='drawer-scroll';
-    while(navLinks.firstChild){scroller.appendChild(navLinks.firstChild);}
-    navLinks.appendChild(scroller);
     navLinks.appendChild(nxtBtn);
   }
   document.querySelectorAll('#navLinks a').forEach(a=>a.addEventListener('click',()=>setMenu(false)));

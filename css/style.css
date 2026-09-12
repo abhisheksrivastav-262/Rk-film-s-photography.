@@ -60,7 +60,7 @@ section{padding:110px 0;position:relative}
 .btn-sm{padding:11px 24px;font-size:.75rem}
 #hamburger{display:none;background:none;border:1px solid var(--line);border-radius:10px;color:var(--ivory);font-size:1.4rem;width:46px;height:46px;cursor:pointer;position:relative;z-index:1001}
 .drawer-next{display:none}
-.nav-links .drawer-scroll{display:contents}
+/* (drawer links + Next button scroll together as one list) */
 /* Side-drawer backdrop (mobile) */
 .nav-backdrop{position:fixed;inset:0;background:rgba(0,0,0,.6);backdrop-filter:blur(2px);-webkit-backdrop-filter:blur(2px);opacity:0;visibility:hidden;transition:opacity .4s var(--ease),visibility .4s;z-index:999}
 .nav-backdrop.show{opacity:1;visibility:visible}
@@ -256,14 +256,14 @@ a,button{-webkit-tap-highlight-color:rgba(200,164,106,.25);touch-action:manipula
   .split,.contact-grid{grid-template-columns:1fr}
   .stats-grid{grid-template-columns:repeat(2,1fr);gap:36px}
   .foot-grid{grid-template-columns:1fr 1fr}
-  .nav-links{position:fixed;top:92px;right:0;bottom:0;left:auto;width:min(320px,75vw);background:rgba(10,10,10,.98);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-left:1px solid var(--line);border-top:1px solid var(--line);box-shadow:-30px 0 80px rgba(0,0,0,.55);flex-direction:column;align-items:stretch;justify-content:flex-start;font-size:1.2rem;gap:6px;transform:translateX(105%);transition:transform .5s var(--ease);padding:26px;overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain}
-  .nav-links .drawer-scroll{flex:1 1 auto;min-height:0;overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;display:flex;flex-direction:column}
+  .nav-links{position:fixed;top:92px;right:0;bottom:0;left:auto;width:min(320px,75vw);background:rgba(10,10,10,.98);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-left:1px solid var(--line);border-top:1px solid var(--line);box-shadow:-30px 0 80px rgba(0,0,0,.55);flex-direction:column;align-items:stretch;justify-content:flex-start;font-size:1.1rem;gap:4px;transform:translateX(105%);transition:transform .5s var(--ease);padding:26px;overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain}
+/* (drawer links + Next button scroll together as one list) */
   .nav-links.open{transform:none}
-  .nav-links a{font-size:1rem;padding:13px 2px;border-bottom:1px solid rgba(255,255,255,.07)}
+  .nav-links a{font-size:.95rem;padding:11px 2px;border-bottom:1px solid rgba(255,255,255,.07)}
   .nav-links a.active::after,.nav-links a:hover::after{display:none}
   .nav-links a.active{border-left:3px solid var(--gold);padding-left:12px}
-  .nav-links .btn{margin-top:20px;width:100%;border-bottom:none}
-  .nav-links .drawer-next{display:flex;flex-shrink:0;background:linear-gradient(135deg,var(--gold),#a8823f);color:#0B0B0B;font-weight:700;border-radius:12px;padding:14px 18px;margin-top:12px;border-bottom:none;justify-content:center;align-items:center;letter-spacing:.1em;text-transform:uppercase;font-size:.82rem}
+  .nav-links .btn{margin-top:14px;width:100%;border-bottom:none}
+  .nav-links .drawer-next{display:flex;flex-shrink:0;background:linear-gradient(135deg,var(--gold),#a8823f);color:#0B0B0B;font-weight:700;border-radius:12px;padding:14px 18px;margin-top:12px;border-bottom:none;justify-content:center;align-items:center;letter-spacing:.1em;text-transform:uppercase;font-size:.82rem;flex-shrink:0}
   #hamburger{display:block}
   #cursorGlow{display:none}
   section{padding:80px 0}
