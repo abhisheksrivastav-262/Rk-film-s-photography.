@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <circle cx="100" cy="100" r="96" fill="#0B0B0B" stroke="#C8A46A" stroke-width="3"/>
+  <circle cx="100" cy="100" r="88" fill="none" stroke="#C8A46A" stroke-width="1" opacity="0.5"/>
+  <text x="100" y="108" text-anchor="middle" font-family="Playfair Display, Georgia, serif" font-size="62" font-weight="700" fill="#C8A46A">RK</text>
+  <text x="100" y="132" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" letter-spacing="3" fill="#F7F5F2">FILMS</text>
+  <text x="100" y="145" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" letter-spacing="2" fill="#C8A46A">PHOTOGRAPHY</text>
+</svg>
